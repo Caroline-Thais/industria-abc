@@ -1,0 +1,21 @@
+<%- include ('../../partials/header.ejs');%>
+<%- include ('../../partials/navbar.ejs');%>
+
+<div class="container"><br>
+    <div class="card">
+        <div class="card-header">
+            <h5>Editar código de status</h5>
+        </div>
+        <div class="card-body">
+            <form method="POST" action="/eventos/update">
+                <input type="hidden" name="id" value="<%= evento.id %>">
+                <input class="form-control" type="text" name="codigo" value="<%= evento.codigo %>" placeholder="defina o código de status">
+                <br>
+                <button class="btn btn-primary">Editar status</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<%- include ('../../partials/footer.ejs');%>

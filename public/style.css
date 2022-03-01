@@ -1,0 +1,19 @@
+    body{
+        background: #ffd89b;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 100vh;
+        color: white;    
+  }
+    
+
+    h4, h6{
+        color: white;
+    }
+
+    .botoes{
+        display: flex;
+        gap: 2%;
+    }  
+
+    

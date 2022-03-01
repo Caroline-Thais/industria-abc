@@ -1,0 +1,62 @@
+<%- include ('../../partials/header.ejs');%>
+<%- include ('../../partials/navbar.ejs');%>
+
+
+<div class="container"><br>
+
+    <h4>Lista de máquinas</h4>
+    <h6>Abaixo segue o inventário de máquinas cadastradas em nossa empresa.</h6><br>
+
+    <a class="btn btn-primary" href="/admin/maquinas/new">Cadastrar nova máquina</a><br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Observações</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% maquinas.forEach(maquina => { %>
+            <tr>
+                <th><%= maquina.id%></th>
+                <th><%= maquina.nome%></th>
+                <th><%= maquina.observacoes%></th>               
+                <td><%= maquina.evento.codigo %></td>
+                <th><div class="botoes"><a href="/admin/maquinas/edit/<%= maquina.id %>" class="btn btn-secondary">Editar</a>
+                    <form method="POST" action="/maquinas/delete" style="display: inline;"  onSubmit="deletarStatus(event, this)">
+                    <input type="hidden" name="id" value="<%= maquina.id %>">
+                    <button class="btn btn-secondary">Deletar</button></form></div>
+                </th>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .botoes{
+        display: flex;
+        gap: 2%;
+    }  
+
+  body{
+    height: auto;
+  }  
+</style>
+
+
+<script>
+    function deletarStatus(event, form){
+        event.preventDefault();
+        var confirmar = confirm("Tem certeza que deseja deletar essa máquina?");
+        if (confirmar){
+            form.submit();
+        }
+    }
+</script>
+<%- include ('../../partials/footer.ejs');%>
+

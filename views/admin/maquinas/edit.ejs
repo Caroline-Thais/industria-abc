@@ -1,0 +1,45 @@
+<%- include ('../../partials/header.ejs');%>
+<%- include ('../../partials/navbar.ejs');%>
+
+<div class="container"><br>
+    <div class="card">
+        <div class="card-header">
+            <h5>Editar máquinas</h5>
+        </div>
+        <div class="card-body">
+            <form method="POST" action="/maquinas/update">
+                <input type="hidden" value="<%= maquina.id%>" name="id">
+                <input class="form-control" type="text" name="nome" placeholder="nome da máquina" value="<%= maquina.nome %>"><br>
+                <input class="form-control" type="text" name="observacoes" id="observacoes" value="<%= maquina.observacoes %>"placeholder="caso tenha alguma observação. Escreva-a aqui."><br>
+                <input class="form-control" placeholder="descrições da máquina" name="body" id="maquina"value="<%= maquina.body %>"></input>
+                <label>Status:</label>
+                <select name="evento" class="form-control">
+                    <% eventos.forEach((evento) => { %>
+                        <% if(evento.id == maquina.eventoId) { %>
+                        <option value="<%= maquina.id%>" selected><%= evento.codigo %></option>
+                        <%}else{ %>
+                        <option value="<%= evento.id %>"><%= evento.codigo %></option>
+                        <% } %>
+                        <% }) %>
+                </select>
+                <br>
+                <button class="btn btn-primary">Editar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<%- include ('../../partials/footer.ejs');%>
+
+<script src="/tinymce/js/tinymce/tinymce.min.js"></script>
+
+<script>
+
+    tinymce.init({
+        selector:"#maquina",
+        plugins: [
+            'advlist autolink link image lists print preview hr searchplace wordcount fullscreen insertdatetime media save table paste'
+        ]
+    })
+</script>

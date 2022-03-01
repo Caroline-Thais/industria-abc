@@ -1,0 +1,40 @@
+<%- include ('../../partials/header.ejs');%>
+<%- include ('../../partials/navbar.ejs');%>
+
+<div class="container"><br>
+    <div class="card">
+        <div class="card-header">
+            <h5>Cadastro de máquinas</h5>
+        </div>
+        <div class="card-body">
+            <form method="POST" action="/maquinas/save">
+                <input class="form-control" type="text" name="nome" placeholder="nome da máquina"><br>
+                <input class="form-control" type="text" name="observacoes" placeholder="caso tenha alguma observação. Escreva-a aqui."><br>
+                <textarea class="form-control" placeholder="descrições da máquina" name="body" id="maquina"></textarea>
+                <label>Status:</label>
+                <select name="evento" class="form-control">
+                    <% eventos.forEach((evento) => { %>
+                        <option value="<%= evento.id%>"><%= evento.codigo %></option>
+                        <% }) %>
+                </select>
+                <br>
+                <button class="btn btn-primary">Cadastrar máquina</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<%- include ('../../partials/footer.ejs');%>
+
+<script src="/tinymce/js/tinymce/tinymce.min.js"></script>
+
+<script>
+
+    tinymce.init({
+        selector:"#maquina",
+        plugins: [
+            'advlist autolink link image lists print preview hr searchplace wordcount fullscreen insertdatetime media save table paste'
+        ]
+    })
+</script>

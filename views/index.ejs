@@ -1,0 +1,78 @@
+<%- include ('partials/header.ejs');%>
+<%- include ('partials/homenavbar.ejs');%>
+
+<div class="container"><br>
+  <h4>Bem vindo(a) colaborador(a) Indústria ABC!</h4><hr>
+
+  <div class="menu">
+    <div class="link1">
+      <a href="/admin/maquinas"><img src="/images/trabalhador3.jpg" height="250em" width="250em"><hr>
+      <h5>Máquinas cadastradas</h5></a>
+    </div>
+    <div class="link2">
+      <a href="/admin/maquinas/acompanhamento"><img src="/images/trabalhador4.jpg" height="250em" width="250em"><hr>
+      <h5>Atualizações dos status</h5></a>
+    </div>
+    <div class="link3">
+      <a href="/admin/eventos"><img src="/images/trabalhador2.jpg" height="250em" width="250em"><hr>
+      <h5>Códigos de status</h5></a>
+    </div>
+</div><hr>
+  <h5>Relatórios por máquinas</h5>
+  <% maquinas.forEach(maquina => { %>
+    <div class="card">
+      <div class="card-header">
+        <h3><%= maquina.nome %></h3>
+        <div class="card-body">
+          <a href="/<%-maquina.slug%>" class="btn btn-secondary">Ver relatório</a>
+        </div>
+      </div>
+    </div>
+  <% }) %>
+
+  <div class="row">
+    <div class="col col-12">
+      <a style="float: right; color: black;" href="/maquinas/page/2">Next ></a>
+    </div>
+  </div>
+
+<%- include ('partials/footer.ejs');%>
+
+</div>
+
+<style>
+  body{
+    height: auto;
+  }
+  
+    img{
+      border-radius: 50%;
+    }
+    .menu{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: stretch;
+      align-content: center;
+      text-align: center;
+      background-color: #ffffff40;;
+      padding: 4%;
+      }
+        @media all and (max-width: 500px) {
+          .conteudo {
+          /*Usar display em colunas em telas pequenas*/
+          flex-direction: column;
+            }
+        }
+  
+    .menu a{
+      text-decoration: none;
+      color: black;
+    }
+  
+    .card{
+      margin-top: 1%;
+      background-color: #ffffff40;
+    }
+    
+  </style>

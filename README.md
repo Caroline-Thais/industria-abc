@@ -1,4 +1,7 @@
 # industria-abc
+<a href="http://147.182.184.213/" target="_blank" style="color: rgb(243, 87, 113);">veja o projeto clicando AQUI</a><br>
+<a href="https://caroline-thais.github.io/siteapresentacaotcs/" target="_blank">documentação AQUI</a>
+---
 
 <p><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/344/external-video-notifications-justicon-lineal-color-justicon.png" height="30em"> Vídeo:</p>
 

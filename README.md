@@ -5,6 +5,7 @@ Aplicação web para controlar o status de cada máquina do parque industrial da
 
 <p><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/344/external-video-notifications-justicon-lineal-color-justicon.png" height="30em"> Vídeo:</p>
 
+
 [![Watch the video](https://user-images.githubusercontent.com/76595905/155984133-19099395-bae3-4e05-8dfe-ceab53152a3c.PNG)](https://youtu.be/yfhheAuavHM)
 
 <p><img src="https://img.icons8.com/plasticine/344/stack-of-photos.png" height="40em"> Galeria:</p>

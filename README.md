@@ -42,6 +42,7 @@ utilizando a arquitetura Rest e para o consumo da mesma foi utilizado o Axios. <
 
 ![Capturar9](https://user-images.githubusercontent.com/76595905/155985289-42e65307-e59c-456b-883b-f8bf261d684e.PNG)
 
+---
 <div align="center">
 Desenvolvido por THAÍS CAROLINE SILVA 
 <img src="https://cdn-icons-png.flaticon.com/512/2618/2618497.png" height="40em"> 

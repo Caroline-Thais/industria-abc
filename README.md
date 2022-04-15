@@ -1,7 +1,25 @@
 # industria-abc
 <a href="http://147.182.184.213/" target="_blank" style="color: rgb(243, 87, 113);">veja o projeto clicando AQUI</a>
 ---
-Aplicação web para controlar o status de cada máquina do parque industrial da empresa fictícia Indústra ABC.
+
+Aplicação web para controlar o status de cada máquina do parque industrial da empresa fictícia Indústra ABC.<br>
+--
+O projeto consta de duas partes: uma Aplicação Web e uma API.<br>
+
+<img src="https://img.icons8.com/external-icongeek26-flat-icongeek26/452/external-web-data-analytics-icongeek26-flat-icongeek26.png" height="80em"> Aplicação Web:
+
+Tecnologias utilizadas: node, express, body parser, ejs, sequelize, slugify, tinymce, bootstrap, html e css.
+Foram feitos dois CRUDs, um para 'máquinas' e outro para os 'status', que chamo no código de 'eventos'. Cada máquina possui um relatório que pode ser acessado pela tela 
+inicial ou filtrando os resultados por 'códigos de status' na navbar da home.<br>
+
+<img src="https://img.icons8.com/external-filled-outline-perfect-kalash/344/external-api-web-development-and-programming-filled-outline-perfect-kalash.png" height="80em">API:
+
+Esta encontra-se no link 'atualizações dos status' e foi importada para o node modules desta aplicação. 
+Link do código da API: https://github.com/Caroline-Thais/apiIndustriaAbc que foi feita para simular o envio de dados das máquinas para a aplicação web. 
+A API seria controlada pelos trabalhadores que têm acesso direto às máquinas. Pela API esses funcionários podem fazer o controle das máquinas, cadastrando, editando e 
+atualizando o status delas e, ao salvar os dados, os funcionários que ficam no escritório teriam acesso a essas informações por meio da aplicação web. A API foi construída 
+utilizando a arquitetura Rest e para o consumo da mesma foi utilizado o Axios. <br>
+
 
 <p><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/344/external-video-notifications-justicon-lineal-color-justicon.png" height="30em"> Vídeo:</p>
 

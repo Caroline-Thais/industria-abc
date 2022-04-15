@@ -44,4 +44,4 @@ utilizando a arquitetura Rest e para o consumo da mesma foi utilizado o Axios. <
 
 <div align="center">
 Desenvolvido por THAÍS CAROLINE SILVA 
-<img src="https://cdn-icons-png.flaticon.com/512/2618/2618497.png" height="40em"> <img src="https://cdn-icons-png.flaticon.com/512/1400/1400486.png" height="30em"><a hreh="https://www.linkedin.com/in/thais-caroline-silva/"></a></div>
+<img src="https://cdn-icons-png.flaticon.com/512/2618/2618497.png" height="40em"> <img src="https://cdn-icons-png.flaticon.com/512/1400/1400486.png" height="30em"><a href="https://www.linkedin.com/in/thais-caroline-silva/"></a></div>

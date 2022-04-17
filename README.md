@@ -1,6 +1,11 @@
 # industria-abc
 <a href="http://147.182.184.213/" target="_blank" style="color: rgb(243, 87, 113);">veja o projeto clicando AQUI</a>
 ---
+<div align="center">
+  
+![logo](https://github.com/Caroline-Thais/industria-abc/blob/master/20220228_081639.jpg.gif)  
+  
+</div>
 
 Aplicação web para controlar o status de cada máquina do parque industrial da empresa fictícia Indústra ABC.<br>
 --

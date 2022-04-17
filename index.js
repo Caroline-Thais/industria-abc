@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const connection = require("./database/database");
-const apiindustriaabc = require("apiindustriaabc");
+//const apiindustriaabc = require("apiindustriaabc");
 
 const maquinasController = require("./maquinas/MaquinasController");
 const eventosController = require("./eventos/EventosController");

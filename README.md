@@ -7,7 +7,7 @@
   
 </div>
 
-Aplicação web para controlar o status de cada máquina do parque industrial da empresa fictícia Indústra ABC.<br>
+Aplicação web para controlar o status de cada máquina do parque industrial da empresa fictícia Indústria ABC.<br>
 --
 O projeto consta de duas partes: uma Aplicação Web e uma API.<br>
 

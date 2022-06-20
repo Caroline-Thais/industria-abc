@@ -54,6 +54,6 @@ Link do código da API: <a href="https://github.com/Caroline-Thais/apiIndustriaA
 
 ---
 <div align="center">
-Developed by THAÍS CAROLINE SILVA 
+<!--Developed by-->Desenvolvido por THAÍS CAROLINE SILVA 
 <img src="https://cdn-icons-png.flaticon.com/512/2618/2618497.png" height="40em"> 
 </div>

@@ -7,22 +7,28 @@
   
 </div>
 
-Web application to control the status of each machine in the industrial park.<br>
---
-The project consists of two parts: a Web Application and an API.<br>
+<!--<!Web application to control the status of each machine in the industrial park.<br>-->
+Aplicação web para controlar o status de cada máquina do parque industrial da empresa fictícia Indústra ABC.
 
-<img src="https://img.icons8.com/external-icongeek26-flat-icongeek26/452/external-web-data-analytics-icongeek26-flat-icongeek26.png" height="80em"> Web Application:
+<!--The project consists of two parts: a Web Application and an API.<br>-->
+O projeto consta de duas partes: uma Aplicação Web e uma API.
 
-Technologies used: node, express, body parser, ejs, sequelize, slugify, tinymce, bootstrap, html and css.
-Two CRUDs were made, one for 'machines' and one for 'status', which I call 'events' in the code. Each machine has a report that can be accessed through the home page or filtering the results by 'status codes' in the home navbar.<br>
+<img src="https://img.icons8.com/external-icongeek26-flat-icongeek26/452/external-web-data-analytics-icongeek26-flat-icongeek26.png" height="80em"> <!--Web Application:-->Aplicação Web:
+
+<!--Technologies used: node, express, body parser, ejs, sequelize, slugify, tinymce, bootstrap, html and css.
+Two CRUDs were made, one for 'machines' and one for 'status', which I call 'events' in the code. Each machine has a report that can be accessed through the home page or filtering the results by 'status codes' in the home navbar.<br>-->
+Tecnologias utilizadas: node, express, mysql, body parser, ejs, sequelize, slugify, tinymce, bootstrap, html e css.
+Foram feitos dois CRUDs, um para 'máquinas' e outro para os 'status', que chamo no código de 'eventos'. Cada máquina possui um relatório que pode ser acessado pela tela inicial ou filtrando os resultados por 'códigos de status' na navbar da home.
 
 <img src="https://img.icons8.com/external-filled-outline-perfect-kalash/344/external-api-web-development-and-programming-filled-outline-perfect-kalash.png" height="80em">API:
 
-This can be found in the 'status updates' link and has been imported into the node modules of this application.
+<!--This can be found in the 'status updates' link and has been imported into the node modules of this application.
 API code link: https://github.com/Caroline-Thais/apiIndustriaAbc which was made to simulate sending data from machines to the web application.
 The API would be controlled by workers who have direct access to the machines. Through the API, these employees can control the machines, registering, editing and
 updating their status and, when saving the data, the employees who stay in the office would have access to this information through the web application. The API was built
-using the Rest architecture and for its consumption Axios was used. <br>
+using the Rest architecture and for its consumption Axios was used. <br>-->
+Esta encontra-se no link 'atualizações dos status' e foi importada para o node modules desta aplicação. 
+Link do código da API: <a href="https://github.com/Caroline-Thais/apiIndustriaAbc">AQUI</a> que foi feita para simular o envio de dados das máquinas para a aplicação web. A API seria controlada pelos trabalhadores que têm acesso direto às máquinas. Pela API esses funcionários podem fazer o controle das máquinas, cadastrando, editando e atualizando o status delas e, ao salvar os dados, os funcionários que ficam no escritório teriam acesso a essas informações por meio da aplicação web. A API foi construída utilizando a arquitetura Rest e para o consumo da mesma foi utilizado o Axios. 
 
 
 <p><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/344/external-video-notifications-justicon-lineal-color-justicon.png" height="30em"> Video:</p>
@@ -30,7 +36,7 @@ using the Rest architecture and for its consumption Axios was used. <br>
 
 [![Watch the video](https://user-images.githubusercontent.com/76595905/155984133-19099395-bae3-4e05-8dfe-ceab53152a3c.PNG)](https://youtu.be/yfhheAuavHM)
 
-<p><img src="https://img.icons8.com/plasticine/344/stack-of-photos.png" height="40em"> Pictures:</p>
+<p><img src="https://img.icons8.com/plasticine/344/stack-of-photos.png" height="40em"> Imagens:</p>
 
 ![Capturar2](https://user-images.githubusercontent.com/76595905/155984376-eb86a1f9-3af4-4e9d-a2ba-7d7bfa345633.PNG)
 
